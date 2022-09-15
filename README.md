@@ -68,3 +68,58 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+React Project
+
+Name : TVmaze
+
+What functionality do you have to build?
+
+Click the link
+
+Innovate on UI & build same functionality
+
+What APIs are used for this project?
+The whole documentation of APIs you will find 👇
+Here
+Use this docs to get details of API…
+
+To make it easy for you, here are 3 apis that you will be using to search shows by show name & also by actor name
+
+For search by shows:
+Use This
+
+Ex: https://api.tvmaze.com/search/shows?q=friends
+Here instead of friends if u write any other show name details of that show will be fetched.
+
+Ex: https://api.tvmaze.com/search/shows?q=girls
+This will fetch all the details of show girls
+
+For search by actor:
+
+Step1. Get details of actor user has typed
+
+https://api.tvmaze.com/search/people?q=akon
+
+Ex:
+https://api.tvmaze.com/search/people?q=akon
+Here instead of akon, if you write any other actor name, details of all the actors with names similar to akon will be fetched.
+
+Step 2. Get all the popular shows of the actor by actorId fetched in step 1
+
+https://api.tvmaze.com/people/actorId/castcredits?embed=show
+
+Ex:
+https://api.tvmaze.com/people/121783/castcredits?embed=show
+
+This api will fetch all the shows of an actor with id 121783….check step 1 api it gives u all the actors with their ids too. Use any one actor id here in step 2 to fetch his shows.
+
+Note: Innovate on design. You can take inspiration from Netflix or hotstar or amazon prime.
+
+Some help to find designs…
