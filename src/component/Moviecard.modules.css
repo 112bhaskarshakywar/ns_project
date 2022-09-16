@@ -5,8 +5,13 @@
     box-shadow: 10px 10px 10px #241f20;
      margin: 20px;
      /* padding :0; */
+     text-align: left;
 }
 img{
-    width: auto;
+    width: 210px;
     height:300px;
+}
+p{
+    margin:5px;
+    font-family:  cursive;
 }

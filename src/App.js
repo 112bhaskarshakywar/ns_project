@@ -38,9 +38,9 @@ function App() {
     // console.log(dataState);
   }
   function handelShowFunction(data) {
-    // console.log("handelShowFunction working");
-    // console.log(data);
+    console.log(data);
     setDataState(data);
+    // console.log("handelShowFunction working");
     // <Moviediv data={data}/>
     // {<NotFound data={data}/>}
     // data.length === 0 ? <NotFound/> : (
@@ -63,7 +63,7 @@ function App() {
             )
               .then((res) => res.json())
               .then((data) => {
-                // console.log(data)
+                console.log(data)
                 handelActorFunction(data, searchBy)});
           }
         });
