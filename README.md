@@ -43,10 +43,10 @@ List the ready features here:
 
 
 ## Screenshots
-![Screenshot (56)](https://user-images.githubusercontent.com/68631246/182025014-1adae5c6-86e8-46f3-b261-41403166655b.png)
-![Screenshot (57)](https://user-images.githubusercontent.com/68631246/182025102-2d199299-216b-4276-8f96-5075c07a5c14.png)
-![Screenshot (58)](https://user-images.githubusercontent.com/68631246/182025104-a92b005a-1b1d-4667-960e-2bb2700ea9fd.png)
-![Screenshot (59)](https://user-images.githubusercontent.com/68631246/182025105-d54d772d-eff3-40fb-a957-fe887f7cd6c7.png)
+![Screenshot (56)](https://github.com/112bhaskarshakywar/ns_project/blob/master/src/images/Screenshot%20(87).png)
+![Screenshot (57)](https://github.com/112bhaskarshakywar/ns_project/blob/master/src/images/Screenshot%20(88).png)
+![Screenshot (58)](https://github.com/112bhaskarshakywar/ns_project/blob/master/src/images/Screenshot%20(89).png)
+![Screenshot (59)](https://github.com/112bhaskarshakywar/ns_project/blob/master/src/images/Screenshot%20(90).png)
 
 
 ## Setup
