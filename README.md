@@ -1,125 +1,84 @@
-# Getting Started with Create React App
+# TvMaze project
+> TvMaze is a online web show searching website. This project is created as the demonstration of calling api and using data fetched from api ,and implementing serach on api fetched results. 
+> Live demo [_here_](https://ns-project.vercel.app/). 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Acknowledgements](#acknowledgements)
+* [Contact](#contact)
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## General Information
+- TvMaze is a website used to search differnt web shows online.  
+- In this we can search show by actor name and by shows name.
+- the purpose of this project to enhance the jsx, css, javascript and reactjs skill by appling  different css, jsx, js, react  properties.
+-And to learcn fetching of data from url and displaying the data in beautiful format.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+- jsx
+- css
+-js
+-React js
 
 
 
 
+## Features
+List the ready features here:
+- A search bar for taking searching the input.
+- Rdaio buttons  for seraching the content by actor name and and by shows name.
+- And message occuring when we didn't entered the search input. 
+- Notfound component when  we wont find show .
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-React Project
+## Screenshots
+![Screenshot (56)](https://user-images.githubusercontent.com/68631246/182025014-1adae5c6-86e8-46f3-b261-41403166655b.png)
+![Screenshot (57)](https://user-images.githubusercontent.com/68631246/182025102-2d199299-216b-4276-8f96-5075c07a5c14.png)
+![Screenshot (58)](https://user-images.githubusercontent.com/68631246/182025104-a92b005a-1b1d-4667-960e-2bb2700ea9fd.png)
+![Screenshot (59)](https://user-images.githubusercontent.com/68631246/182025105-d54d772d-eff3-40fb-a957-fe887f7cd6c7.png)
 
-Name : TVmaze
 
-What functionality do you have to build?
+## Setup
+i have used node modules and react-js liabrary 
 
-Click the link
 
-Innovate on UI & build same functionality
+## Usage
+1> we can use it for searching shows with shows name. 
+2> we can search shows by actor names.
+3> to view  language and rating of shows.
 
-What APIs are used for this project?
-The whole documentation of APIs you will find 👇
-Here
-Use this docs to get details of API…
 
-To make it easy for you, here are 3 apis that you will be using to search shows by show name & also by actor name
+## Project Status
+Project is complete and hosted on vercel.
 
-For search by shows:
-Use This
 
-Ex: https://api.tvmaze.com/search/shows?q=friends
-Here instead of friends if u write any other show name details of that show will be fetched.
+## Room for Improvement
+we can improve this project by adding featues..
 
-Ex: https://api.tvmaze.com/search/shows?q=girls
-This will fetch all the details of show girls
+Room for improvement:
+- we can improve it by adding theme toggel button.
+- we can add footers and attach the shows images with shows streaming url.
+- we can add more information of displayed shows.
+we can also add search for movies.
 
-For search by actor:
 
-Step1. Get details of actor user has typed
+## Acknowledgements
+- This project was inspired by project on newton school assignment.
+- Many thanks to mentor Prince Kumar and our instructor utkarsh thakur.
 
-https://api.tvmaze.com/search/people?q=akon
 
-Ex:
-https://api.tvmaze.com/search/people?q=akon
-Here instead of akon, if you write any other actor name, details of all the actors with names similar to akon will be fetched.
 
-Step 2. Get all the popular shows of the actor by actorId fetched in step 1
+## Contact
+Created by [@flynerdpl](112bhaskarshakywar@gmail.com ) - feel free to contact me!
 
-https://api.tvmaze.com/people/actorId/castcredits?embed=show
 
-Ex:
-https://api.tvmaze.com/people/121783/castcredits?embed=show
-
-This api will fetch all the shows of an actor with id 121783….check step 1 api it gives u all the actors with their ids too. Use any one actor id here in step 2 to fetch his shows.
-
-Note: Innovate on design. You can take inspiration from Netflix or hotstar or amazon prime.
-
-Some help to find designs…
