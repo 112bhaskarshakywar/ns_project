@@ -7,37 +7,44 @@ import NotFound from "./component/Notfound";
 
 function App() {
   const [placeholderSearch, setPlaceholderSearch] = useState(
-    "search by actor name"
+    "search by show  name"
   );
   const [searchBy, setSearchBY] = useState("false");
   const [inputSearch, setInputSearch] = useState("");
   const [dataState, setDataState] = useState([]);
-  const [errorMsg,setErrorMsg] = useState("");
+  const [errorMsg ,setErrorMsg] = useState("");
+  let obj = [];
 
   function handelOnChange(event) {
     if (event.target.value === "") {
-      setInputSearch("all");
+      // setInputSearch("all");
+      setErrorMsg('pls enter something');
+      setInputSearch(event.target.value);
+      // setInputSearch("all");
     } else {
       setInputSearch(event.target.value);
-      setErrorMsg("");
+      setErrorMsg('');
     }
   }
   // console.log(inputSearch);
   function handelChangeRadio(event) {
     setSearchBY(event.target.value);
-    // console.log(event.target.value)
-    // console.log(data);
+   
   }
 
   function handelActorFunction(data) {
+    // console.log("handel Actor Function working");
+    console.log(data);
     
-    inputSearch? setDataState(data): setErrorMsg("pls type actor name to search there show");
+   
+      setDataState(data);
+    
    
   }
   function handelShowFunction(data) {
-    // console.log(data);
-    // setDataState(data);
-    inputSearch === '' ? setDataState(data): setErrorMsg("pls type show name to search there show");
+    console.log(data);
+    setDataState(data);
+   
   }
 
   // for having state change useEffect
@@ -47,9 +54,30 @@ function App() {
       fetch(url)
         .then((res) => res.json())
         .then((data) => {
+          
+          // data?.map((element,index)=>{
+          //   let actorId = element.length === 0 ? 0 : data[index].person.id;
+          //   if (actorId !== 0) {
+          //       fetch(
+          //         `https://api.tvmaze.com/people/${actorId}/castcredits?embed=show`
+          //       )
+          //         .then((res) => res.json())
+          //         .then((data) => {
+          //           // console.log(data)
+          //           // data.length === 0 ? (setDataState([...obj])):
+          //           //     setDataState([...obj,data])});
+                    
+          //           data.length === 0 ? (obj = [...obj]): (obj = [...obj,data])});
+          //     }
+          //     else {
+          //       const emptydata = [...obj]
+          //     }
+          //     // console.log(obj)
+             
+          // })
+          // handelActorFunction(obj);
+          // obj=[];
           const actorId = data.length === 0 ? 0 : data[0].person.id;
-          // console.log(actorId);
-
           if (actorId !== 0) {
             fetch(
               `https://api.tvmaze.com/people/${actorId}/castcredits?embed=show`
@@ -57,7 +85,12 @@ function App() {
               .then((res) => res.json())
               .then((data) => {
                 console.log(data)
-                handelActorFunction(data, searchBy)});
+                data.length === 0 ? (handelActorFunction([])):
+                    handelActorFunction(data)});
+          }
+          else {
+            const emptydata = []
+            handelActorFunction(emptydata);
           }
         });
     } else if (searchBy === "false") {

@@ -41,14 +41,14 @@ export default function Moviecard(props) {
 //     // console.log("actor");
 //   }}
 if(searchBy === "true"){
-  const name = element._embedded.show.name;
-  const language = element._embedded.show.language;
-  const imageUrl = element._embedded.show.image? (element._embedded.show.image.medium):(imasrc);
+  const name = element._embedded?.show.name;
+  const language = element._embedded?.show.language;
+  const imageUrl = element._embedded?.show.image? (element._embedded.show.image.medium):(imasrc);
   setCardInfo({
     name : name,
       language :language,
       imageUrl : imageUrl,
-      rating: element._embedded.show.rating.average
+      rating: element._embedded?.show.rating.average
 
   })
   
@@ -67,7 +67,7 @@ else if(searchBy === "false"){
 }
   // console.log(element);
   // const image = element.show.image.medium;
-}, []);
+}, [element]);
 
   return (   
   
