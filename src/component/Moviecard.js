@@ -69,7 +69,8 @@ else if(searchBy === "false"){
   // const image = element.show.image.medium;
 }, []);
 
-  return (
+  return (   
+  
     <div className="card">
       <img src={cardInfo.imageUrl? (cardInfo.imageUrl):(imasrc)}  />
       <div>

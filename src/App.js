@@ -12,12 +12,14 @@ function App() {
   const [searchBy, setSearchBY] = useState("false");
   const [inputSearch, setInputSearch] = useState("");
   const [dataState, setDataState] = useState([]);
+  const [errorMsg,setErrorMsg] = useState("");
 
   function handelOnChange(event) {
     if (event.target.value === "") {
       setInputSearch("all");
     } else {
       setInputSearch(event.target.value);
+      setErrorMsg("");
     }
   }
   // console.log(inputSearch);
@@ -28,23 +30,14 @@ function App() {
   }
 
   function handelActorFunction(data) {
-    // console.log("handel Actor Function working");
-    // console.log(data);
-    // data.length === 0 ? (<NotFound/> ): (
-    //   <Moviediv data={data}/>)
-
-    setDataState(data);
-    // <Moviediv data={data}/>
-    // console.log(dataState);
+    
+    inputSearch? setDataState(data): setErrorMsg("pls type actor name to search there show");
+   
   }
   function handelShowFunction(data) {
-    console.log(data);
-    setDataState(data);
-    // console.log("handelShowFunction working");
-    // <Moviediv data={data}/>
-    // {<NotFound data={data}/>}
-    // data.length === 0 ? <NotFound/> : (
-    //   <Moviediv data={data}/>)
+    // console.log(data);
+    // setDataState(data);
+    inputSearch === '' ? setDataState(data): setErrorMsg("pls type show name to search there show");
   }
 
   // for having state change useEffect
@@ -113,6 +106,9 @@ function App() {
                 onChange={(event) => handelOnChange(event)}
                 placeholder={placeholderSearch}
               />
+
+              <br></br>
+              <p>{errorMsg}</p>
             </form>
           </div>
           <div className="showsContainer">
